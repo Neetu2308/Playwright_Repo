@@ -1,0 +1,5 @@
+const a=10
+console.log(a)
+/*a=20--re assihgn not possible
+console.log(a)
+const a=30  re dclaration not possible*/ 

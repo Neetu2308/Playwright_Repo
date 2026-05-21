@@ -1,0 +1,94 @@
+visual testing
+BaseLine Screenshot
+--capture the baseline screenshot and compares with the next screenshot
+
+POM>>Page object Model
+It is design pattern used in test automation to make your code cleaner and easier to maintain
+Use Page class for locators/Methods like fill etc.each web page=one class
+test class to call the methods in page classand assertions
+
+
+
+//chaining of page and chaing of Method
+
+//Allure report used to to generate html report
+npm install -D allure-playwright allure-commandline
+ reporter: [
+    ['list'],
+    ['allure-playwright']
+    ],---to get a proper config
+
+   dir allure-results----to confirm if the result is generated.at least one test case should be run
+
+   npx allure generate allure-results --clean -o allure-report---to generate report
+   npx allure open allure-report ---to open report
+
+   ---------------type script
+   type script is an improved version of java script
+   it is a static typing  means we need to provide type
+   js:let age=26
+   ts:let age:number=25
+  ts doesnot allow different type to saved
+  let age=25
+   age="hello"---dont work in ts but works in js
+   let name:string="anu"
+   console.log(name)
+   let status:boolean=true
+
+
+   error checking
+
+   in js error checking after running
+   in ts error checking is before running ie compile time
+
+   extension
+   .ts
+more code safety 
+
+
+npm install -g typescript--install
+g for global to use in all project
+
+tsc -v--verify installtion
+
+tsc is execute for compile
+after compling ts is converted to js
+then run nomally as js
+node typescript_sample.js to run the file
+
+
+BDD
+
+Behaviour driven development.It is not build int Pw.we use tools like cucumber
+the code is written in english it is called gherkin
+Format for Jegherkinrkin
+Feature:Login-----describes the functionality
+Scenario:succesful Login----------describes a testcase
+Given:Pre condition
+when:User enters valid creds------action performed
+then: expected result
+and:additional steps
+
+Install cucumber
+npm install @cucumber/cucumber
+
+Changes in  Packages.js>>to support e 6 later version
+
+
+run commands: npx cucumber-js --require step-definitions/**/*.js
+
+
+Hooks in cucumber
+BeforeAll runs only once before all Scenarios
+eg:Broswer Launch
+
+2.AfterAll execute only once after all Scenarios are completed
+
+3.Before:exceutes before each Scenario
+eg:Pages set up 
+4:After:Excutes after each Scenarios
+
+5.BeforeStep:exceutes before every steps in a Scenario
+eg:Screenshot
+6:AfterStep:exceutes after  every steps in a Scenario
+git hub token: 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
