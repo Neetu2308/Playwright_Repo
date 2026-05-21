@@ -1,5 +1,6 @@
 import{test,expect} from "@playwright/test";
-const validcredtional=require('../util/testcredentials.json')//importing json file
+//const validcredtional=require('../util/testcredentials.json')//importing json file
+import {validcredtional} from '../util/testcredentials.json'
 //..>>different folder
 //./same folder
 test.beforeEach(async({page})=>{
