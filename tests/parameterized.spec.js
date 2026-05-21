@@ -1,7 +1,8 @@
 //To pass multiple data set using data driven
 
 import{test,expect} from "@playwright/test";
-const dataset=require('../util/parameterizedtestdata.json')
+//const dataset=require('../util/parameterizedtestdata.json')
+import {dataset} from '../util/parameterizedtestdata.json'
 test.beforeEach(async({page})=>{
     await page.goto('https://www.saucedemo.com/')
 })
